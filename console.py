@@ -3,13 +3,11 @@ from rich.console import Console
 from rich.markdown import Markdown
 from rich.padding import Padding
 from rich.panel import Panel
-from rich.text import Text
 
 console = Console()
 
 
 def print_markdown(text):
-    """Prints a rich info message. Support Markdown syntax."""
 
     md = Padding(Markdown(text), 2)
     console.print(md)
